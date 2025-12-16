@@ -1,10 +1,87 @@
-body {
-  font-family: Arial;
-  text-align: center;
-  margin-top: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-button {
+body {
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #111;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  color: white;
+}
+
+.hero span {
+  color: yellow;
+}
+
+.hero button {
+  margin-top: 20px;
   padding: 10px 20px;
-  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills div {
+  background: #2196f3;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Contact */
+#contact input {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#contact button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  cursor: pointer;
 }

@@ -1,15 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Tatsat Singh | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Hello, I am Tatsat</h1>
-  <p>Aspiring Web Developer</p>
+  <!-- Navbar -->
+  <nav>
+    <h2 class="logo">Tatsat</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <button onclick="showMessage()">Click Me</button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Hello, I'm <span>Tatsat Singh</span></h1>
+    <p>Aspiring Full Stack Developer</p>
+    <button onclick="changeText()">Click Me</button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a computer science student interested in web development.
+      I enjoy building real-world projects and learning new technologies.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <div>React</div>
+      <div>Node.js</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <input type="text" id="name" placeholder="Your Name">
+    <button onclick="showGreeting()">Send</button>
+    <p id="greeting"></p>
+  </section>
 
   <script src="script.js"></script>
 </body>
